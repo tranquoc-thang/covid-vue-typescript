@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <logo />
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br />
@@ -112,9 +113,13 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import Logo from "./Atoms/Logo.vue";
 
 export default defineComponent({
   name: "HelloWorld",
+  components: {
+    Logo,
+  },
   props: {
     msg: String,
   },

@@ -1,0 +1,53 @@
+$primary-color: #7d54c7;
+$text-color: gray;
+$background-color: #181a1b;
+$background-color-second: #1f1c28;
+$text-color-hover: #e8e6e3;
+$text-color-heading: #e5e3e0;
+$background-color-primary: #131516;
+$background-color-third: #1b1b22;
+
+*,
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $background-color-primary;
+  font-family: "Mulish", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+@mixin flex(
+  $align: flex-start,
+  $justify: flex-start,
+  $wrap: nowrap,
+  $direction: row
+) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-wrap: $wrap;
+  flex-direction: $direction;
+}
+
+.text-center {
+  text-align: center;
+}
