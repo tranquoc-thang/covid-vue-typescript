@@ -9,13 +9,21 @@ import { Options, Vue } from "vue-class-component";
 import Header from "./components/Organisms/Header.vue";
 import Footer from "./components/Organisms/Footer.vue";
 
-@Options({
+export default {
+  name: "App",
   components: {
     HeaderTemplate: Header,
     FooterTemplate: Footer,
   },
-})
-export default class App extends Vue {}
+};
+
+// @Options({
+//   components: {
+//     HeaderTemplate: Header,
+//     FooterTemplate: Footer,
+//   },
+// })
+// export default class App extends Vue {}
 </script>
 
 <style lang="scss">

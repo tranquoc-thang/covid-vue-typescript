@@ -49,7 +49,8 @@
         <p style="color: green; font-size: 1.4rem; margin-bottom: 0.5rem">
           {{ message.success }}
         </p>
-        <my-input type="text" v-model="message.val" />
+        <!-- <my-input type="text" v-model="message.val" /> -->
+        <textarea v-model="message.val"></textarea>
       </div>
       <my-button text="SEND MESSAGE" />
     </div>
@@ -203,6 +204,28 @@ export default {
     }
   }
 }
+
+textarea {
+  height: 43px;
+  border-radius: 0.4rem;
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+  height: 250px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $text-color;
+  background-color: $background-color;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  outline: none;
+  &:focus {
+    border: 1px solid $primary-color;
+  }
+}
+
 @media (min-width: 1023px) {
   .form {
     padding-left: 5rem;

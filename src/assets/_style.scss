@@ -51,3 +51,20 @@ img {
 .text-center {
   text-align: center;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: $background-color;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 4px;
+  height: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), $primary-color);
+  border-radius: 100rem;
+}
+
+::-webkit-scrollbar-track {
+  width: 10px;
+  background: transparent;
+}
