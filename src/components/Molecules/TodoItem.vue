@@ -11,6 +11,7 @@
 </template>
 
 <script lang="ts">
+import { ref } from "vue";
 import Heading from "../Atoms/Heading.vue";
 import Text from "../Atoms/Text.vue";
 import Icon from "../Atoms/Icon.vue";
